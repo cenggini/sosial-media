@@ -1,0 +1,476 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - Shorthand-Background Social Media Logos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'>
+
+      <style>
+      k* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body, button {
+  font-family: "Open Sans", sans-serif;
+}
+main {
+  display: flex;
+	justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+}
+textarea {
+  background-color: #222;
+  border: 0;
+  color: #fff;
+  font: 16px monospace;
+	margin-bottom: -5px;
+  padding: 10px;
+  resize: vertical;
+  width: 94%;
+}
+button {
+  background-color: #1f42a3;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+  line-height: 2.5em;
+  padding: 0;
+  width: 100%;
+  -webkit-appearance: none;
+}
+button:active {
+  background-color: #122f7d;
+}
+.logo {
+  background-color: #fff;
+  box-shadow: 0 2px 3px 3px rgba(0,0,0,0.25);
+  margin: 15px;
+}
+.logo > div {
+  width: 300px;
+  height: 300px;
+}
+
+.twitter {
+  background:
+    radial-gradient(13% 12.5% at 62% 37.5%,#fff 99%,transparent 99%),
+    radial-gradient(22% 15% at 64% 15.5%,#0be 99%,transparent 99%),
+    radial-gradient(15% 15% at 66% 20.5%,#fff 99%,transparent 99%),
+    radial-gradient(17.5% 15% at 72% 18.25%,#0be 99%,transparent 99%),
+    radial-gradient(15% 15% at 68% 24%,#fff 99%,transparent 99%),
+    radial-gradient(34% 20% at 55% 21%,#0be 99%,transparent 99%),
+    radial-gradient(13.5% 14% at 35% 33%,#fff,#fff 99%,transparent 99%),
+    radial-gradient(17.5% 15% at 30% 29.5%,#0be 99%,transparent 99%),
+    radial-gradient(12% 15% at 33% 40.5%,#fff 99%,transparent 99%),
+    radial-gradient(10% 6.5% at 29% 49%,#0be 99%,transparent 99%),
+    radial-gradient(16.5% 17.5% at 40% 47.5%,#fff 99%,transparent 99%),
+    radial-gradient(35% 36% at 20% 34%,#0be 99%,transparent 99%),
+    radial-gradient(36% 35% at 39% 40.5%,#fff 99%,#0be 99%);
+}
+.facebook {
+  background:
+    linear-gradient(transparent 29.5%,#46a 29.5%,#46a 35%,transparent 35%)100% 0/26% 100% no-repeat,
+    radial-gradient(12% 12% at 74.75% 35.25%,#46a 50%,transparent 50%),
+    linear-gradient(90deg,transparent 84.5%,#46a 84.5%),
+    radial-gradient(200% 100% at 25% 94%,#fff 50%,transparent 50%)100% 0/31% 34% no-repeat,
+    radial-gradient(100% 100% at 55% 100%,#fff 55%,transparent 55%)77.75% 0.25%/31.25% 34% no-repeat,
+    linear-gradient(96.5deg,transparent,transparent 80%,#46a 80%),
+    linear-gradient(#46a 34%,transparent 34%,transparent 46.5%,#fff 46.5%,#fff 61%,transparent 61%)100% 0/59.5% 100% no-repeat,
+    linear-gradient(90deg,transparent 53.75%,#fff 53.75%,#fff 69%,transparent 69%),
+    linear-gradient(#46a,#46a);
+}
+.linkedin {
+  background:
+    radial-gradient(7.25% 7.25% at 26.25% 26%,#fff 99%,transparent 99%),
+    linear-gradient(#07a 39.5%,transparent 39.5%,transparent 81.5%,#07a 81.5%),
+    radial-gradient(7.625% 7.625% at 61.25% 58%,#07a 99%,transparent 99%),
+    linear-gradient(#07a,#07a 53%,transparent 53%)63.5% 113%/14.5% 50% no-repeat, 
+    radial-gradient(15.25% 12.5% at 66% 52%,#fff 99%,transparent 99%),
+    linear-gradient(#07a,#07a 53%,transparent 53%)107% 0/50% 100% no-repeat, 
+    linear-gradient(90deg,#07a 18.75%,#fff 18.75%,#fff 33.5%,#07a 33.5%,#07a 42%,#fff 42%,#fff 53.75%,#07a 53.75%,#07a 68.5%,#fff 68.5%,#fff 81.25%,#07a 81.25%)
+}
+.youtube {
+  background:
+	radial-gradient(35% 29.5% at 100% 100%,#fff 99%,#f33 99%)0 9% /30% 30% no-repeat,
+    radial-gradient(35% 29.5% at 0% 100%,#fff 99%,#f33 99%)100% 9% /30% 30% no-repeat,
+    radial-gradient(35% 29.5% at 100% 0%,#fff 99%,#f33 99%)0 91% /30% 30% no-repeat,
+    radial-gradient(35% 29.5% at 0% 0%,#fff 99%,#f33 99%)100% 91% /30% 30% no-repeat,
+    radial-gradient(45% 5% at 50% 32%,#fff 99%,transparent 99%),
+    radial-gradient(45% 5% at 50% 68%,#fff 99%,transparent 99%),
+    radial-gradient(5% 40% at 24% 50%,#fff 99%,transparent 99%),
+    radial-gradient(5% 40% at 76% 50%,#fff 99%,transparent 99%),
+    linear-gradient(90deg,transparent 28%,#fff 28%,#fff 43.5%,transparent 43.5%)0 50%/100% 45% no-repeat,
+    linear-gradient(29deg,transparent 59%,#fff 59%,#fff 85%,transparent 85%)50% 50%/60% 40% no-repeat,
+    linear-gradient(-29deg,transparent 15%,#fff 15%,#fff 43%,transparent 43%)50% 50%/60% 40% no-repeat,
+    linear-gradient(#f33,#f33);
+}
+.instagram {
+  background:
+    radial-gradient(4.5% 4.5% at 69.5% 30.5%,#fff 99%,transparent 99%),
+    radial-gradient(transparent 17.5%, #fff 17.5%, #fff 26.5%, transparent 26.5%),
+    linear-gradient(transparent 14%,#fff 14%,#fff 20.5%,transparent 20.5%,transparent 80%,#fff 80%,#fff 86.5%,transparent 86.5%)50% 0/32% 100% no-repeat,
+    linear-gradient(90deg,transparent 14%,#fff 13.5%,#fff 20.5%,transparent 20.5%,transparent 80%,#fff 80%,#fff 86.5%,transparent 86.5%)0 50%/100% 32% no-repeat,
+    radial-gradient(62.75% 62.75% at 100% 100%,transparent 64%,#fff 64%,#fff 95%,transparent 95%)0 0/34% 34% no-repeat,
+    radial-gradient(62.75% 62.75% at 0% 100%,transparent 64%,#fff 64%,#fff 95%,transparent 95%)100% 0/34% 34% no-repeat,
+    radial-gradient(62.75% 62.75% at 0% 0%,transparent 64%,#fff 64%,#fff 95%,transparent 95%)100% 100%/34% 34% no-repeat,
+    radial-gradient(62.75% 62.75% at 100% 0%,transparent 64%,#fff 64%,#fff 95%,transparent 95%)0 100%/34% 34% no-repeat,
+    radial-gradient(100% 100% at 32% 106%, #fd7 0%, #fc6 10%, #f93 28%, #e44 42%, transparent 82%),
+    linear-gradient(135deg, #24d 12%, #c4b 58%);
+}
+.reddit {
+  background:
+    radial-gradient(1.75% 1.75% at 55% 22.5%,#000 99%,transparent 99%),
+    linear-gradient(14.5deg,transparent 39%,#000 39%,#000 60%,transparent 60%)64% 20.75% /14% 10% no-repeat,
+    linear-gradient(-72deg,transparent 40%,#000 40%,#000 65%,transparent 65%)53% 26% /8% 17% no-repeat,
+    radial-gradient(4.75% 4.75% at 60.25% 53%, #f20 99%,transparent 99%),
+    radial-gradient(4.75% 4.75% at 39.75% 53%, #f20 99%,transparent 99%),
+    radial-gradient(3% 3% at 40% 65.5%,#000 50%,#fff 50%,transparent 50%),
+    radial-gradient(3% 3% at 60% 65.5%,#000 50%,#fff 50%,transparent 50%),
+    radial-gradient(44% 80% at 50% 20%,#fff 99%,transparent 99%)50% 65.25%/22% 5% no-repeat,
+    radial-gradient(50% 80% at 50% 20%,#000 99%,transparent 99%)50% 68.5%/22% 5% no-repeat,
+    radial-gradient(13% 13% at 73.25% 26.25%, #fff 10%,#fff 28%,#000 28%,#000 50%,transparent 50%),
+    radial-gradient(27.75% 17.5% at 50% 56.75%,#fff 99%,transparent 99%),
+    radial-gradient(20% 10% at 50% 56.75%,#000 99%,transparent 99%),
+    radial-gradient(30.75% 20.5% at 50% 56.75%,#000 99%,transparent 99%),
+    radial-gradient(16% 16% at 76.5% 47.75%,#fff 10%,#fff 30%,#000 30%,#000 50%,transparent 50%),
+    radial-gradient(16% 16% at 23.5% 47.75%,#fff 10%,#fff 30%,#000 30%,#000 50%,transparent 50%),
+    linear-gradient(#cef,#cef);
+}
+.pinterest {
+  background:
+    radial-gradient(120% 350% at 2% -71%,transparent 33%,#c22 33%,#c22)48.75% 100%/32.5% 32.5% no-repeat,
+    radial-gradient(50% 100% at 31% 20%,#fff 50%,transparent 50%)48.75% 100%/32.5% 32.5% no-repeat,
+    radial-gradient(5.25% 5.25% at 46.5% 38%,#fff 99%,transparent 99%),
+    radial-gradient(5% 8.5% at 44.5% 42%,#fff 99%,transparent 99%),
+    linear-gradient(-75deg,transparent 52%,#fff 52%,#fff 59.75%,transparent 59.75%,#c22 59.75%,#c22 64.25%,transparent 64.25%)0 54%/100% 30% no-repeat,
+    radial-gradient(5.5% 12% at 59.75% 42%,#c22 99%,transparent 99%),
+    radial-gradient(9% 13% at 55% 45%,#c22 99%,transparent 99%),
+    radial-gradient(16% 13% at 50% 37.75%,#c22 99%,transparent 99%),
+    linear-gradient(-74.5deg,transparent 48%,#fff 48%,#fff 52%,transparent 52%)0 50%/100% 12% no-repeat,
+    radial-gradient(16.75% 15% at 49% 41%,#c22 99%,transparent 99%),
+    radial-gradient(10% 15% at 65% 42%,#fff 99%,transparent 99%),
+    radial-gradient(15.5% 20.5% at 59% 42%,#fff 99%,transparent 99%),
+    radial-gradient(17% 22% at 56% 42.5%,#fff 99%,transparent 99%),
+    radial-gradient(24.75% 20% at 50.5% 38.75%,#fff 99%,transparent 99%),
+    radial-gradient(10% 14% at 35% 41%,#fff 99%,transparent 99%),
+    linear-gradient(#c22,#c22);
+}
+.digg {
+  background:
+    linear-gradient(transparent 63%,#000 63%)22% 0/17% 100% no-repeat,
+    linear-gradient(#000 32%,transparent 32%,transparent 37.25%,#000 37.25%,#000 40.5%,transparent 40.5%,transparent 61%,#000 61%)40% 0/7% 100% no-repeat,
+    linear-gradient(90deg,transparent 18%,#000 18%,#000 28.5%,transparent 28.5%,transparent 46%,#000 46%)0 34%/100% 9% no-repeat,
+    linear-gradient(90deg,transparent 18%,#000 18%,#000 56.5%,transparent 56.5%,transparent 65%,#000 65%,#000 75%,transparent 75%)0 62%/100% 3% no-repeat,
+    linear-gradient(90deg,transparent 25%,#000 25%,#000 28.5%,transparent 28.5%,transparent 53.5%,#000 53.5%,#000 56.5%,transparent 56.5%,transparent 72%,#000 72%,#000 75%,transparent 75%)0 50%/100% 9% no-repeat,
+    linear-gradient(90deg,#000 19%,transparent 19%,transparent 34.5%,#000 34.5%,#000 37.5%,transparent 37.5%,transparent 44%,#000 44%,#000 47%,transparent 47%,transparent 62.5%,#000 62.5%,#000 66%,transparent 66%,transparent 81.5%,#000 81.5%,#000),
+    linear-gradient(#000 31.5%,#fff 31.5%,#fff 69%,#000 69%);
+}
+.tumblr {
+  background:
+    radial-gradient(13.5% 20% at 31% 15.5%,#245 99%,transparent 99%),
+    radial-gradient(22% 32% at 79% 0%,#245 99%,transparent 99%)50% 78%/38% 15.5% no-repeat,
+    radial-gradient(35% 41% at 69% 55%,#fff 99%,transparent 99%)50% 78%/38% 15.5% no-repeat,
+    radial-gradient(20% 74% at 41.25% 8%,#fff 99%,transparent 99%)50% 78%/38% 15.5% no-repeat,
+    radial-gradient(40% 65% at 64% 34%,#fff 99%,transparent 99%)50% 78%/38% 15.5% no-repeat,
+    linear-gradient(90deg,transparent 60%,#245 60%)48.5% 22%/35% 14.5% no-repeat,
+    linear-gradient(90deg,#245 22%,transparent 22%,transparent 60%,#245 60%)48.5% 57%/35% 21.5% no-repeat,
+    linear-gradient(#fff,#fff)48.5% 36%/35% 47% no-repeat,
+    linear-gradient(#245,#245);
+}
+.flickr {
+  background:
+    radial-gradient(14.75% 14.75% at 31.5% 50%, #05E 99%,transparent 99%),
+    radial-gradient(14.75% 14.75% at 68.5% 50%, #f07 99%,transparent 99%);
+}
+.rss {
+  background:
+    radial-gradient(100% 100% at 1% 99%,transparent 46%,#fff 46%,#fff 65%,transparent 65%,transparent 80%,#fff 80%,#fff 99%,transparent 99%)50% 50%/62.5% 62.5% no-repeat,
+    radial-gradient(8.5% 8.5% at 27% 73%,#fff 99%,#f82 99%);
+}
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  <main>
+	<div class="logo">
+    <div class="twitter"></div>
+    <textarea id="twitter" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;twitter&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.twitter {
+  background:
+    radial-gradient(13% 12.5% at 62% 37.5%,#fff 99%,transparent 99%),
+    radial-gradient(22% 15% at 64% 15.5%,#0be 99%,transparent 99%),
+    radial-gradient(15% 15% at 66% 20.5%,#fff 99%,transparent 99%),
+    radial-gradient(17.5% 15% at 72% 18.25%,#0be 99%,transparent 99%),
+    radial-gradient(15% 15% at 68% 24%,#fff 99%,transparent 99%),
+    radial-gradient(34% 20% at 55% 21%,#0be 99%,transparent 99%),
+    radial-gradient(13.5% 14% at 35% 33%,#fff,#fff 99%,transparent 99%),
+    radial-gradient(17.5% 15% at 30% 29.5%,#0be 99%,transparent 99%),
+    radial-gradient(12% 15% at 33% 40.5%,#fff 99%,transparent 99%),
+    radial-gradient(10% 6.5% at 29% 49%,#0be 99%,transparent 99%),
+    radial-gradient(16.5% 17.5% at 40% 47.5%,#fff 99%,transparent 99%),
+    radial-gradient(35% 36% at 20% 34%,#0be 99%,transparent 99%),
+    radial-gradient(36% 35% at 39% 40.5%,#fff 99%,#0be 99%);
+}</textarea>
+    <button data-clipboard-target="#twitter">Copy</button>
+  </div>
+  <div class="logo">
+    <div class="facebook"></div>
+    <textarea id="facebook" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;facebook&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.facebook {
+  background:
+    linear-gradient(transparent 29.5%,#46a 29.5%,#46a 35%,transparent 35%)100% 0/26% 100% no-repeat,
+    radial-gradient(12% 12% at 74.75% 35.25%,#46a 50%,transparent 50%),
+    linear-gradient(90deg,transparent 84.5%,#46a 84.5%),
+    radial-gradient(200% 100% at 25% 94%,#fff 50%,transparent 50%)100% 0/31% 34% no-repeat,
+    radial-gradient(100% 100% at 55% 100%,#fff 55%,transparent 55%)77.75% 0.25%/31.25% 34% no-repeat,
+    linear-gradient(96.5deg,transparent,transparent 80%,#46a 80%),
+    linear-gradient(#46a 34%,transparent 34%,transparent 46.5%,#fff 46.5%,#fff 61%,transparent 61%)100% 0/59.5% 100% no-repeat,
+    linear-gradient(90deg,transparent 53.75%,#fff 53.75%,#fff 69%,transparent 69%),
+    linear-gradient(#46a,#46a);
+}</textarea>
+    <button data-clipboard-target="#facebook">Copy</button>
+  </div>
+  <div class="logo">
+    <div class="linkedin">
+    </div>
+    <textarea id="linkedin" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;Linkedin&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.linkedin {
+  background:
+    radial-gradient(7.25% 7.25% at 26.25% 26%,#fff 99%,transparent 99%),
+    linear-gradient(#07a 39.5%,transparent 39.5%,transparent 81.5%,#07a 81.5%),
+    radial-gradient(7.625% 7.625% at 61.25% 58%,#07a 99%,transparent 99%),
+    linear-gradient(#07a,#07a 53%,transparent 53%)63.5% 113%/14.5% 50% no-repeat, 
+    radial-gradient(15.25% 12.5% at 66% 52%,#fff 99%,transparent 99%),
+    linear-gradient(#07a,#07a 53%,transparent 53%)107% 0/50% 100% no-repeat, 
+    linear-gradient(90deg,#07a 18.75%,#fff 18.75%,#fff 33.5%,#07a 33.5%,#07a 42%,#fff 42%,#fff 53.75%,#07a 53.75%,#07a 68.5%,#fff 68.5%,#fff 81.25%,#07a 81.25%)
+}</textarea>
+    <button data-clipboard-target="#linkedin">Copy</button>
+  </div>
+  <div class="logo">
+    <div class="youtube"></div>
+    <textarea id="youtube" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;Youtube&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.youtube {
+  background:
+	radial-gradient(35% 29.5% at 100% 100%,#fff 99%,#f33 99%)0 9% /30% 30% no-repeat,
+    radial-gradient(35% 29.5% at 0% 100%,#fff 99%,#f33 99%)100% 9% /30% 30% no-repeat,
+    radial-gradient(35% 29.5% at 100% 0%,#fff 99%,#f33 99%)0 91% /30% 30% no-repeat,
+    radial-gradient(35% 29.5% at 0% 0%,#fff 99%,#f33 99%)100% 91% /30% 30% no-repeat,
+    radial-gradient(45% 5% at 50% 32%,#fff 99%,transparent 99%),
+    radial-gradient(45% 5% at 50% 68%,#fff 99%,transparent 99%),
+    radial-gradient(5% 40% at 24% 50%,#fff 99%,transparent 99%),
+    radial-gradient(5% 40% at 76% 50%,#fff 99%,transparent 99%),
+    linear-gradient(90deg,transparent 28%,#fff 28%,#fff 43.5%,transparent 43.5%)0 50%/100% 45% no-repeat,
+    linear-gradient(29deg,transparent 59%,#fff 59%,#fff 85%,transparent 85%)50% 50%/60% 40% no-repeat,
+    linear-gradient(-29deg,transparent 15%,#fff 15%,#fff 43%,transparent 43%)50% 50%/60% 40% no-repeat,
+    linear-gradient(#f33,#f33);
+}</textarea>
+    <button data-clipboard-target="#youtube">Copy</button>
+  </div>
+	<div class="logo">
+    <div class="instagram"></div>
+    <textarea id="instagram" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;Instagram&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.instagram {
+  background:
+    radial-gradient(4.5% 4.5% at 69.5% 30.5%,#fff 99%,transparent 99%),
+    radial-gradient(transparent 17.5%, #fff 17.5%, #fff 26.5%, transparent 26.5%),
+    linear-gradient(transparent 14%,#fff 14%,#fff 20.5%,transparent 20.5%,transparent 80%,#fff 80%,#fff 86.5%,transparent 86.5%)50% 0/32% 100% no-repeat,
+    linear-gradient(90deg,transparent 14%,#fff 13.5%,#fff 20.5%,transparent 20.5%,transparent 80%,#fff 80%,#fff 86.5%,transparent 86.5%)0 50%/100% 32% no-repeat,
+    radial-gradient(62.75% 62.75% at 100% 100%,transparent 64%,#fff 64%,#fff 95%,transparent 95%)0 0/34% 34% no-repeat,
+    radial-gradient(62.75% 62.75% at 0% 100%,transparent 64%,#fff 64%,#fff 95%,transparent 95%)100% 0/34% 34% no-repeat,
+    radial-gradient(62.75% 62.75% at 0% 0%,transparent 64%,#fff 64%,#fff 95%,transparent 95%)100% 100%/34% 34% no-repeat,
+    radial-gradient(62.75% 62.75% at 100% 0%,transparent 64%,#fff 64%,#fff 95%,transparent 95%)0 100%/34% 34% no-repeat,
+    radial-gradient(100% 100% at 32% 106%, #fd7 0%, #fc6 10%, #f93 28%, #e44 42%, transparent 82%),
+    linear-gradient(135deg, #24d 12%, #c4b 58%);
+}</textarea>
+    <button data-clipboard-target="#instagram">Copy</button>
+  </div>
+	<div class="logo">
+    <div class="reddit"></div>
+    <textarea id="reddit" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;reddit&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.reddit {
+  background:
+    radial-gradient(1.75% 1.75% at 55% 22.5%,#000 99%,transparent 99%),
+    linear-gradient(14.5deg,transparent 39%,#000 39%,#000 60%,transparent 60%)64% 20.75% /14% 10% no-repeat,
+    linear-gradient(-72deg,transparent 40%,#000 40%,#000 65%,transparent 65%)53% 26% /8% 17% no-repeat,
+    radial-gradient(4.75% 4.75% at 60.25% 53%, #f20 99%,transparent 99%),
+    radial-gradient(4.75% 4.75% at 39.75% 53%, #f20 99%,transparent 99%),
+    radial-gradient(3% 3% at 40% 65.5%,#000 50%,#fff 50%,transparent 50%),
+    radial-gradient(3% 3% at 60% 65.5%,#000 50%,#fff 50%,transparent 50%),
+    radial-gradient(44% 80% at 50% 20%,#fff 99%,transparent 99%)50% 65.25%/22% 5% no-repeat,
+    radial-gradient(50% 80% at 50% 20%,#000 99%,transparent 99%)50% 68.5%/22% 5% no-repeat,
+    radial-gradient(13% 13% at 73.25% 26.25%, #fff 10%,#fff 28%,#000 28%,#000 50%,transparent 50%),
+    radial-gradient(27.75% 17.5% at 50% 56.75%,#fff 99%,transparent 99%),
+    radial-gradient(20% 10% at 50% 56.75%,#000 99%,transparent 99%),
+    radial-gradient(30.75% 20.5% at 50% 56.75%,#000 99%,transparent 99%),
+    radial-gradient(16% 16% at 76.5% 47.75%,#fff 10%,#fff 30%,#000 30%,#000 50%,transparent 50%),
+    radial-gradient(16% 16% at 23.5% 47.75%,#fff 10%,#fff 30%,#000 30%,#000 50%,transparent 50%),
+    linear-gradient(#cef,#cef);
+}</textarea>
+    <button data-clipboard-target="#reddit">Copy</button>
+  </div>
+	<div class="logo">
+    <div class="pinterest"></div>
+    <textarea id="pinterest" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;Pinterest&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.pinterest {
+  background:
+    radial-gradient(120% 350% at 2% -71%,transparent 33%,#c22 33%,#c22)48.75% 100%/32.5% 32.5% no-repeat,
+    radial-gradient(50% 100% at 31% 20%,#fff 50%,transparent 50%)48.75% 100%/32.5% 32.5% no-repeat,
+    radial-gradient(5.25% 5.25% at 46.5% 38%,#fff 99%,transparent 99%),
+    radial-gradient(5% 8.5% at 44.5% 42%,#fff 99%,transparent 99%),
+    linear-gradient(-75deg,transparent 52%,#fff 52%,#fff 59.75%,transparent 59.75%,#c22 59.75%,#c22 64.25%,transparent 64.25%)0 54%/100% 30% no-repeat,
+    radial-gradient(5.5% 12% at 59.75% 42%,#c22 99%,transparent 99%),
+    radial-gradient(9% 13% at 55% 45%,#c22 99%,transparent 99%),
+    radial-gradient(16% 13% at 50% 37.75%,#c22 99%,transparent 99%),
+    linear-gradient(-74.5deg,transparent 48%,#fff 48%,#fff 52%,transparent 52%)0 50%/100% 12% no-repeat,
+    radial-gradient(16.75% 15% at 49% 41%,#c22 99%,transparent 99%),
+    radial-gradient(10% 15% at 65% 42%,#fff 99%,transparent 99%),
+    radial-gradient(15.5% 20.5% at 59% 42%,#fff 99%,transparent 99%),
+    radial-gradient(17% 22% at 56% 42.5%,#fff 99%,transparent 99%),
+    radial-gradient(24.75% 20% at 50.5% 38.75%,#fff 99%,transparent 99%),
+    radial-gradient(10% 14% at 35% 41%,#fff 99%,transparent 99%),
+    linear-gradient(#c22,#c22);
+}</textarea>
+    <button data-clipboard-target="#pinterest">Copy</button>
+  </div>
+  <div class="logo">
+    <div class="digg"></div>
+    <textarea id="digg" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;digg&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.digg {
+  background:
+    linear-gradient(transparent 63%,#000 63%)22% 0/17% 100% no-repeat,
+    linear-gradient(#000 32%,transparent 32%,transparent 37.25%,#000 37.25%,#000 40.5%,transparent 40.5%,transparent 61%,#000 61%)40% 0/7% 100% no-repeat,
+    linear-gradient(90deg,transparent 18%,#000 18%,#000 28.5%,transparent 28.5%,transparent 46%,#000 46%)0 34%/100% 9% no-repeat,
+    linear-gradient(90deg,transparent 18%,#000 18%,#000 56.5%,transparent 56.5%,transparent 65%,#000 65%,#000 75%,transparent 75%)0 62%/100% 3% no-repeat,
+    linear-gradient(90deg,transparent 25%,#000 25%,#000 28.5%,transparent 28.5%,transparent 53.5%,#000 53.5%,#000 56.5%,transparent 56.5%,transparent 72%,#000 72%,#000 75%,transparent 75%)0 50%/100% 9% no-repeat,
+    linear-gradient(90deg,#000 19%,transparent 19%,transparent 34.5%,#000 34.5%,#000 37.5%,transparent 37.5%,transparent 44%,#000 44%,#000 47%,transparent 47%,transparent 62.5%,#000 62.5%,#000 66%,transparent 66%,transparent 81.5%,#000 81.5%,#000),
+    linear-gradient(#000 31.5%,#fff 31.5%,#fff 69%,#000 69%);
+}</textarea>
+    <button data-clipboard-target="#digg">Copy</button>
+  </div>
+  <div class="logo">
+    <div class="tumblr"></div>
+    <textarea id="tumblr" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;tumblr&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.tumblr {
+  background:
+    radial-gradient(13.5% 20% at 31% 15.5%,#245 99%,transparent 99%),
+    radial-gradient(22% 32% at 79% 0%,#245 99%,transparent 99%)50% 78%/38% 15.5% no-repeat,
+    radial-gradient(35% 41% at 69% 55%,#fff 99%,transparent 99%)50% 78%/38% 15.5% no-repeat,
+    radial-gradient(20% 74% at 41.25% 8%,#fff 99%,transparent 99%)50% 78%/38% 15.5% no-repeat,
+    radial-gradient(40% 65% at 64% 34%,#fff 99%,transparent 99%)50% 78%/38% 15.5% no-repeat,
+    linear-gradient(90deg,transparent 60%,#245 60%)48.5% 22%/35% 14.5% no-repeat,
+    linear-gradient(90deg,#245 22%,transparent 22%,transparent 60%,#245 60%)48.5% 57%/35% 21.5% no-repeat,
+    linear-gradient(#fff,#fff)48.5% 36%/35% 47% no-repeat,
+    linear-gradient(#245,#245);
+}</textarea>
+    <button data-clipboard-target="#tumblr">Copy</button>
+  </div>
+  <div class="logo">
+    <div class="flickr"></div>
+    <textarea id="flickr" rows="5" readonly>
+			Ini html
+			&lt;div class=&quot;logo&quot;&gt;
+    &lt;div class=&quot;flickr&quot;&gt;&lt;/div&gt;
+			
+			Ini css
+.flickr {
+  background:
+    radial-gradient(14.75% 14.75% at 31.5% 50%, #05E 99%,transparent 99%),
+    radial-gradient(14.75% 14.75% at 68.5% 50%, #f07 99%,transparent 99%);
+}</textarea>
+    <button data-clipboard-target="#flickr">Copy</button>
+  </div>
+  <div class="logo">
+    <div class="rss"></div>
+    <textarea id="rss" rows="5" readonly>
+.rss {
+  background:
+    radial-gradient(100% 100% at 1% 99%,transparent 46%,#fff 46%,#fff 65%,transparent 65%,transparent 80%,#fff 80%,#fff 99%,transparent 99%)50% 50%/62.5% 62.5% no-repeat,
+    radial-gradient(8.5% 8.5% at 27% 73%,#fff 99%,#f82 99%);
+}</textarea>
+    <button data-clipboard-target="#rss">Copy</button>
+  </div>
+</main>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js'></script>
+
+  
+
+    <script >
+      new Clipboard('button');
+    </script>
+
+
+
+  
+  
+
+</body>
+
+</html>
+ 
